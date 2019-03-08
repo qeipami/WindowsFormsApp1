@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnStrings = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnStrings
+            // 
+            this.btnStrings.Location = new System.Drawing.Point(100, 50);
+            this.btnStrings.Name = "btnStrings";
+            this.btnStrings.Size = new System.Drawing.Size(100, 30);
+            this.btnStrings.TabIndex = 0;
+            this.btnStrings.Text = "A Message";
+            this.btnStrings.UseVisualStyleBackColor = true;
+            this.btnStrings.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Form2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(284, 161);
+            this.Controls.Add(this.btnStrings);
+            this.Name = "Form2";
+            this.Text = "A First Message";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnStrings;
     }
 }
 
