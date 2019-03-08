@@ -16,5 +16,12 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void btnStrings_Click(object sender, EventArgs e)
+        {
+            string firstName;
+            firstName = textBox1.Text;
+            MessageBox.Show(firstName);
+        }
     }
 }
