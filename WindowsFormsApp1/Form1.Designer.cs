@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form2
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -41,14 +41,15 @@
             this.btnStrings.UseVisualStyleBackColor = true;
             this.btnStrings.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form2
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 161);
             this.Controls.Add(this.btnStrings);
-            this.Name = "Form2";
+            this.Name = "Form1";
             this.Text = "A First Message";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 

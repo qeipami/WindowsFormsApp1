@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form3 : Form
+    public partial class Form5 : Form
     {
-        public Form3()
+        public Form5()
         {
             InitializeComponent();
         }
 
-        private void btnStrings_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            string firstName;
-            firstName = textBox1.Text;
-            MessageBox.Show(firstName);
-        }
+            string FirstName;
+            string messageText;
 
-        private void Form3_Load(object sender, EventArgs e)
-        {
+            FirstName = textBox1.Text;
+
+            messageText = "Your Name is: ";
+            label1.Text= messageText + FirstName;
 
         }
     }
