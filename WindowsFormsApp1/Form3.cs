@@ -20,11 +20,8 @@ namespace WindowsFormsApp1
         private void btnStrings_Click(object sender, EventArgs e)
         {
             string firstName;
-            string messageText;
-
-            messageText = "Your name is: ";
             firstName = textBox1.Text;
-            MessageBox.Show(messageText + firstName);
+            MessageBox.Show(firstName);
         }
     }
 }
